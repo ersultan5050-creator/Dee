@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Black Tie Invitation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bg"></canvas>
+
+<audio id="music">
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<section id="cover" class="screen">
+  <div class="envelope" onclick="openLetter()">
+    <h1>FOR NŪRLYAIYM</h1>
+    <p>Touch to open</p>
+  </div>
+</section>
+
+<section id="s1" class="screen hidden">
+  <div class="card">
+    <img src="photo.jpg">
+    <h1>Нұрлыайым</h1>
+    <p>Некоторые вечера не повторяются.</p>
+    <button onclick="toInvite()">Продолжить</button>
+  </div>
+</section>
+
+<section id="s2" class="screen hidden">
+  <div class="card">
+    <h2>28 июня</h2>
+    <h3>17:00</h3>
+    <h1>TARY</h1>
+    <p>Семей</p>
+    <button onclick="toQuestion()">Далее</button>
+  </div>
+</section>
+
+<section id="s3" class="screen hidden">
+  <div class="card">
+    <h2>Проведём этот вечер вместе?</h2>
+    <button onclick="yes()">Да</button>
+    <button id="no">Не сегодня</button>
+  </div>
+</section>
+
+<section id="final" class="screen hidden">
+  <div class="card">
+    <h1>До встречи</h1>
+    <p>28 июня • 17:00 • TARY</p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
